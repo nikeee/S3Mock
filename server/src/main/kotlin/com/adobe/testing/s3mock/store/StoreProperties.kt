@@ -1,5 +1,5 @@
 /*
- *  Copyright 2017-2025 Adobe.
+ *  Copyright 2017-2026 Adobe.
  *
  *  Licensed under the Apache License, Version 2.0 (the "License");
  *  you may not use this file except in compliance with the License.
@@ -23,15 +23,26 @@ import software.amazon.awssdk.regions.Region
 @JvmRecord
 @ConfigurationProperties("com.adobe.testing.s3mock.store")
 data class StoreProperties(
-// True if files should be retained when S3Mock exits gracefully.
-  // False to let S3Mock delete all files when S3Mock exits gracefully.
+  /**
+   * True if files should be retained when S3Mock exits gracefully.
+   * False to let S3Mock delete all files when S3Mock exits gracefully.
+   */
   @param:DefaultValue("false") val retainFilesOnExit: Boolean,
-  // The root directory to use. If omitted a default temp-dir will be used.
+  /**
+   * The root directory to use. If omitted a default temp-dir will be used.
+   */
   @param:DefaultValue("") val root: String,
+  /**
+   * A set of KMS keys that S3Mock should treat as valid.
+   */
   @param:DefaultValue("") val validKmsKeys: Set<String>,
-  // A comma separated list of buckets that are to be created at startup.
+  /**
+   * A comma separated list of buckets that are to be created at startup.
+   */
   @param:DefaultValue("") val initialBuckets: List<String>,
-  // Region is S3Mock is supposed to mock.
-  // Must be an official AWS region string like "us-east-1"
+  /**
+   * Region is S3Mock is supposed to mock.
+   * Must be an official AWS region string like "us-east-1"
+   */
   @param:DefaultValue("us-east-1") val region: Region
 )
