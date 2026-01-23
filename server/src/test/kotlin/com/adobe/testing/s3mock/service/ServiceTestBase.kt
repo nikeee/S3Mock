@@ -158,7 +158,6 @@ internal abstract class ServiceTestBase {
       owner,
       null,
       size,
-      StorageClass.STANDARD
     )
   }
 

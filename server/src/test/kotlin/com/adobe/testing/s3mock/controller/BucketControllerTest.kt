@@ -219,7 +219,7 @@ internal class BucketControllerTest : BaseControllerTest() {
       .thenReturn(
         listOf(
           S3Object(
-            null, null, null, "key", null, null, null, null, null,
+            null, null, null, "key", null, null, null, null,
           )
         )
       )
@@ -831,7 +831,6 @@ internal class BucketControllerTest : BaseControllerTest() {
     TEST_OWNER,
     null,
     "size",
-    StorageClass.STANDARD
   )
 
   private fun givenBucket(bucketMetadata: BucketMetadata = bucketMetadata()) {

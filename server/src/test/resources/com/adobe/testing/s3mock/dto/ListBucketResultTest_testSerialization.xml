@@ -29,7 +29,6 @@
     <LastModified>2009-10-12T17:50:30.000Z</LastModified>
     <ETag>"fba9dede5f27731c9771645a39863328"</ETag>
     <Size>434234</Size>
-    <StorageClass>STANDARD</StorageClass>
     <Owner>
       <ID>10</ID>
     </Owner>
@@ -41,7 +40,6 @@
     <LastModified>2009-10-12T17:50:30.000Z</LastModified>
     <ETag>"fba9dede5f27731c9771645a39863328"</ETag>
     <Size>434234</Size>
-    <StorageClass>STANDARD</StorageClass>
     <Owner>
       <ID>11</ID>
     </Owner>

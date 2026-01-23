@@ -44,8 +44,6 @@ class ObjectVersion(
   val restoreStatus: RestoreStatus?,
   @param:JsonProperty("Size", namespace = "http://s3.amazonaws.com/doc/2006-03-01/")
   val size: String?,
-  @param:JsonProperty("StorageClass", namespace = "http://s3.amazonaws.com/doc/2006-03-01/")
-  val storageClass: StorageClass?,
   @param:JsonProperty("VersionId", namespace = "http://s3.amazonaws.com/doc/2006-03-01/")
   val versionId: String?
 ) {
@@ -70,7 +68,6 @@ class ObjectVersion(
         s3ObjectMetadata.owner,
         null,
         s3ObjectMetadata.size,
-        s3ObjectMetadata.storageClass,
         s3ObjectMetadata.versionId
       )
     }
@@ -89,7 +86,6 @@ class ObjectVersion(
         s3Object.owner,
         s3Object.restoreStatus,
         s3Object.size,
-        s3Object.storageClass,
         "null"
       )
     }

@@ -287,7 +287,6 @@ open class BucketService(
           null,
           null,
           it.size,
-          it.storageClass
         )
       }
     }
@@ -328,7 +327,6 @@ open class BucketService(
           it.owner,
           it.restoreStatus,
           it.size,
-          it.storageClass
         )
       }
       returnPrefix = urlEncodeIgnoreSlashes(prefix)
@@ -408,7 +406,6 @@ open class BucketService(
           it.owner,
           it.restoreStatus,
           it.size,
-          it.storageClass
         )
       }
       returnPrefix = urlEncodeIgnoreSlashes(prefix)

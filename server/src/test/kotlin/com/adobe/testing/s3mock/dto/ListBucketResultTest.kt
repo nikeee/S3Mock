@@ -51,7 +51,6 @@ internal class ListBucketResultTest {
         Owner((10L + it).toString()),
         null,
         "434234",
-        StorageClass.STANDARD
       )
     }
   }

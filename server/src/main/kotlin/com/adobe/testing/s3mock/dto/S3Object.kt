@@ -43,8 +43,6 @@ class S3Object (
   val restoreStatus: RestoreStatus?,
   @param:JsonProperty("Size", namespace = "http://s3.amazonaws.com/doc/2006-03-01/")
   val size: String?,
-  @param:JsonProperty("StorageClass", namespace = "http://s3.amazonaws.com/doc/2006-03-01/")
-  val storageClass: StorageClass?
 ) {
   @JsonIgnore
   val etag: String?
@@ -66,7 +64,6 @@ class S3Object (
         s3ObjectMetadata.owner,
         null,
         s3ObjectMetadata.size,
-        s3ObjectMetadata.storageClass
       )
     }
   }
